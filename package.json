@@ -1,0 +1,25 @@
+{
+    "name": "netlogo-syntax-highlighting",
+    "displayName": "NetLogo Syntax Highlighting",
+    "description": "NetLogo agent-based modeling language definition",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nlogo",
+            "aliases": ["NetLogo", "nlogo"],
+            "extensions": [".nlogo",".nls"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nlogo",
+            "scopeName": "source.nlogo",
+            "path": "./syntaxes/netlogo.plist"
+        }]
+    }
+}
